@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Management Quiz</title>
+    <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); 
+    body
+     {
+         font-family: 'Roboto', sans-serif;
+          background-color: #e0f7fa; 
+          margin: 0;
+           padding: 20px;
+            display: flex;
+             justify-content: center; 
+             align-items: center;
+              height: 100vh;
+      } 
+             .quiz-container {
+                 background-color: white;
+                  padding: 30px;
+                   border-radius: 15px;
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+                    width: 90%; 
+                    max-width: 700px;
+                 }
+                  h1 { text-align: center; 
+                    color: #00796b;
+                 } 
+                 .question { 
+                    margin-bottom: 20px;
+                 } 
+                 .question p {
+                     color: #004d40;
+                      font-weight: bold; 
+                    } 
+                    .options { 
+                        list-style-type: none;
+                         padding: 0;
+                         } 
+                         .options li { 
+                            margin-bottom: 10px; 
+                        } 
+                        .options input[type="radio"] { 
+                            margin-right: 10px;
+                         }
+                          button { 
+                            padding: 10px 20px; 
+                            background-color: #00796b;
+                             color: white;
+                              border: none; 
+                              border-radius: 5px;
+                               cursor: pointer;
+                                font-family: 'Roboto', sans-serif; 
+                            }
+                             button:hover { 
+                                background-color: #004d40; 
+                            } 
+                            .result {
+                                 margin-top: 20px; 
+                                 text-align: center; font-size: 1.2em; 
+                                 color: #00796b;
+                            }
+                            </style> 
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Database Management Quiz</h1>
+        <div class="question-container">
+            <!-- Questions here -->
+            <div class="question">
+                <p>1. What does SQL stand for?</p>
+                <ul class="options">
+                    <li><label><input type="radio" name="q1" value="Structured Query Language"> Structured Query Language</label></li>
+                    <li><label><input type="radio" name="q1" value="Strong Question Language"> Strong Question Language</label></li>
+                    <li><label><input type="radio" name="q1" value="Structured Question Language"> Structured Question Language</label></li>
+                    <li><label><input type="radio" name="q1" value="Strong Query Language"> Strong Query Language</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>2. Which SQL statement is used to fetch data from a database?</p>
+                <ul class="options">
+                    <li><label><input type="radio" name="q2" value="GET"> GET</label></li>
+                    <li><label><input type="radio" name="q2" value="FETCH"> FETCH</label></li>
+                    <li><label><input type="radio" name="q2" value="SELECT"> SELECT</label></li>
+                    <li><label><input type="radio" name="q2" value="RETRIEVE"> RETRIEVE</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>3. Which one of these is a DDL command?</p>
+                <ul class="options">
+                    <li><label><input type="radio" name="q3" value="INSERT"> INSERT</label></li>
+                    <li><label><input type="radio" name="q3" value="UPDATE"> UPDATE</label></li>
+                    <li><label><input type="radio" name="q3" value="DELETE"> DELETE</label></li>
+                    <li><label><input type="radio" name="q3" value="CREATE"> CREATE</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>4. What type of join returns only the rows with matching values in both tables?</p>
+                <ul class="options">
+                    <li><label><input type="radio" name="q4" value="INNER JOIN"> INNER JOIN</label></li>
+                    <li><label><input type="radio" name="q4" value="LEFT JOIN"> LEFT JOIN</label></li>
+                    <li><label><input type="radio" name="q4" value="RIGHT JOIN"> RIGHT JOIN</label></li>
+                    <li><label><input type="radio" name="q4" value="FULL JOIN"> FULL JOIN</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>5. Which keyword is used to eliminate duplicate rows in SQL?</p>
+                <ul class="options">
+                    <li><label><input type="radio" name="q5" value="DISTINCT"> DISTINCT</label></li>
+                    <li><label><input type="radio" name="q5" value="UNIQUE"> UNIQUE</label></li>
+                    <li><label><input type="radio" name="q5" value="DIFFERENT"> DIFFERENT</label></li>
+                    <li><label><input type="radio" name="q5" value="SEPARATE"> SEPARATE</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>6. Which command is used to create a database in SQL?</p>
+                <ul class="options">
+                    <li><label><input type="radio" name="q6" value="CREATE DATABASE"> CREATE DATABASE</label></li>
+                    <li><label><input type="radio" name="q6" value="MAKE DATABASE"> MAKE DATABASE</label></li>
+                    <li><label><input type="radio" name="q6" value="BUILD DATABASE"> BUILD DATABASE</label></li>
+                    <li><label><input type="radio" name="q6" value="NEW DATABASE"> NEW DATABASE</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>7. What is the default isolation level in SQL Server?</p>
+                <ul class="options">
+                    <li><label><input type="radio" name="q7" value="READ UNCOMMITTED"> READ UNCOMMITTED</label></li>
+                    <li><label><input type="radio" name="q7" value="READ COMMITTED"> READ COMMITTED</label></li>
+                    <li><label><input type="radio" name="q7" value="REPEATABLE READ"> REPEATABLE READ</label></li>
+                    <li><label><input type="radio" name="q7" value="SERIALIZABLE"> SERIALIZABLE</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>8. Which SQL clause is used to filter records?</p>
+                <ul class="options">
+                    <li><label><input type="radio" name="q8" value="FILTER"> FILTER</label></li>
+                    <li><label><input type="radio" name="q8" value="WHERE"> WHERE</label></li>
+                    <li><label><input type="radio" name="q8" value="GROUP"> GROUP</label></li>
+                    <li><label><input type="radio" name="q8" value="SORT"> SORT</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>9. What is the purpose of the PRIMARY KEY in a table?</p>
+                <ul class="options">
+                    <li><label><input type="radio" name="q9" value="To allow null values"> To allow null values</label></li>
+                    <li><label><input type="radio" name="q9" value="To enforce uniqueness"> To enforce uniqueness</label></li>
+                    <li><label><input type="radio" name="q9" value="To store binary data"> To store binary data</label></li>
+                    <li><label><input type="radio" name="q9" value="To create indexes"> To create indexes</label></li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>10. Which type of database schema organizes data into a star or snowflake structure?</p>
+                <ul class="options">
+                    <li><label><input type="radio" name="q10" value="Hierarchical Schema"> Hierarchical Schema</label></li>
+                    <li><label><input type="radio" name="q10" value="Star Schema"> Star Schema</label></li>
+                    <li><label><input type="radio" name="q10" value="Network Schema"> Network Schema</label></li>
+                    <li><label><input type="radio" name="q10" value="Relational Schema"> Relational Schema</label></li>
+                </ul>
+            </div>
+
+    <script>
+       function calculateScore() {
+    var score = 0;
+    var totalQuestions = 10; // Change this based on your total number of questions
+
+    var q1 = document.querySelector('input[name="q1"]:checked');
+    var q2 = document.querySelector('input[name="q2"]:checked');
+    var q3 = document.querySelector('input[name="q3"]:checked');
+    var q4 = document.querySelector('input[name="q4"]:checked');
+    var q5 = document.querySelector('input[name="q5"]:checked');
+    var q6 = document.querySelector('input[name="q6"]:checked');
+    var q7 = document.querySelector('input[name="q7"]:checked');
+    var q8 = document.querySelector('input[name="q8"]:checked');
+    var q9 = document.querySelector('input[name="q9"]:checked');
+    var q10 = document.querySelector('input[name="q10"]:checked');
+
+    if (q1 && q1.value === "Structured Query Language") {
+        score++;
+    }
+    if (q2 && q2.value === "SELECT") {
+        score++;
+    }
+    if (q3 && q3.value === "CREATE") {
+        score++;
+    }
+    if (q4 && q4.value === "INNER JOIN") {
+        score++;
+    }
+    if (q5 && q5.value === "DISTINCT") {
+        score++;
+    }
+    if (q6 && q6.value === "CREATE DATABASE") {
+        score++;
+    }
+    if (q7 && q7.value === "READ COMMITTED") {
+        score++;
+    }
+    if (q8 && q8.value === "WHERE") {
+        score++;
+    }
+    if (q9 && q9.value === "To enforce uniqueness") {
+        score++;
+    }
+    if (q10 && q10.value === "Star Schema") {
+        score++;
+    }
+
+    var passingScore = 0.7 * totalQuestions; // 70% of the total questions
+    var resultDiv = document.getElementById("result");
+
+    if (score >= passingScore) {
+        resultDiv.innerHTML = "Congratulations! You passed with a score of " + score + " out of " + totalQuestions + ". Redirecting to the certificate page...";
+        setTimeout(function() {
+            window.location.href = "C:/Users/Admin/Desktop/EduPulse/Certi_gen.html"; // Replace with your certificate page URL
+        }, 3000); // Redirect after 3 seconds
+    } else {
+        resultDiv.innerHTML = "You scored " + score + " out of " + totalQuestions + ". Unfortunately, you did not pass. Please try again.";
+    }
+       }
+    </script>
+     <button onclick="calculateScore()">Submit</button>
+     <div class="result" id="result"></div>
+     
+</body>
+</html>
