@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: linear-gradient(135deg, #f3ec78, #af4261);
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-family: 'Lobster', cursive;
+            color: #333;
+        }
+        label, input, button {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        input {
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            width: 80%;
+            font-family: 'Roboto', sans-serif;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .certificate {
+            border: 4px double #333;
+            padding: 40px;
+            margin-top: 30px;
+            display: none;
+            background-color: #fff8e1; /* Added background color */
+            position: relative;
+            border-radius: 10px;
+        }
+        .certificate h2, .certificate p, .certificate h3 {
+            margin: 10px 0;
+        }
+        .certificate h2 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5em;
+            color: #af4261;
+        }
+        .certificate h3 {
+            font-family: 'Lobster', cursive;
+            font-size: 2em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Certificate Generator</h1>
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" placeholder="Your Name">
+        <button onclick="generateCertificate()">Generate Certificate</button>
+
+        <div class="certificate" id="certificate">
+            <h2>Certificate of Completion</h2>
+            <p>This is to certify that</p>
+            <h3 id="cert-name"></h3>
+            <p>has successfully completed the course.</p>
+        </div>
+    </div>
+
+    <script>
+        function generateCertificate() {
+            var name = document.getElementById("name").value;
+            if (name.trim() !== "") {
+                document.getElementById("cert-name").innerText = name;
+                document.getElementById("certificate").style.display = "block";
+            } else {
+                alert("Please enter your name.");
+            }
+        }
+    </script>
+</body>
+</html>
